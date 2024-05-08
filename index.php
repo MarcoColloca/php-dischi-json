@@ -22,13 +22,22 @@
         </header>
 
         <main>
-            <div class="container">
-                <div class="row">
-                    <p>
-                        
-                    </p>
+            <section class="disk-cards py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="card text-bg-dark">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Titolo!</h5>
+                                    <p class="card-text text-center">Autore.</p>
+                                    <h5 class="card-title text-center">Anno?</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </section>
         </main>
         
        
@@ -44,6 +53,7 @@
         background-color: rgb(53, 53, 53);
     }
 
+    /** Header */
 
     header{
         background-color: coral;        
@@ -53,6 +63,12 @@
         color: white;
         padding: 30px 0;
         text-align: center;
+    }
+
+    /** Main */
+
+    .disk-cards{
+
     }
 </style>
 </html>
