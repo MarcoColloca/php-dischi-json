@@ -4,7 +4,7 @@ createApp({
 
     data() {
         return {
-            message: 'PHP Dischi JSON!',
+            title: 'PHP Dischi JSON!',
             dischi: [],
         }
     },

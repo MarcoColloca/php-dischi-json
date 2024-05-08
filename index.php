@@ -16,7 +16,7 @@
         <header>
             <div class="title">
                 <h1>
-                    {{ message }}
+                    {{ title }}
                 </h1>
             </div>
         </header>
