@@ -1,4 +1,5 @@
 <?php
+/*
 $dischi = [
     [
         "title" => "New Jersey",
@@ -43,15 +44,24 @@ $dischi = [
         "genre" => "Rock"
     ]
 ];
+*/
 
-// in che modo verranno inviati i dati al server?
+// recupero i dati dal file dischi.json
+$data_string = file_get_contents('dischi.json');
+
+// trasformo il contenuto in formato php (array associativi)
+$dischi = json_decode($data_string, true);
+
+
+// comunico al server che il file è un file di tipo json 
 header('Content-type: application/json');
 
-// quale sarà la risposta ricevuta?
+
+// specifico quiale sarà la risposta che verrà visualizzata
 $response = [
   'results' => $dischi,
   'success' => true
 ];
 
-//in che formato verrà generato l'output? 
+// richiamo il file trasformandolo di nuovo in formato json 
 echo json_encode($response);
