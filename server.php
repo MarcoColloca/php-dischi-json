@@ -49,11 +49,12 @@ $dischi = [
 // recupero i dati dal file dischi.json
 $data_string = file_get_contents('dischi.json');
 
-// trasformo il contenuto in formato php (array associativi)
+// trasformo il contenuto in formato php; il parametro "true", fa sì che venga trasformato in un array associativo, anziché un oggetto.
 $dischi = json_decode($data_string, true);
 
 
-// comunico al server che il file è un file di tipo json 
+
+// comunico che l'output è di tipo json 
 header('Content-type: application/json');
 
 

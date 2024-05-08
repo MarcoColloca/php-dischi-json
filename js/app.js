@@ -7,7 +7,6 @@ createApp({
             title: 'PHP Dischi JSON!',
             dischi: [],
 
-            objectIndex: 0,
             modalDisk: {},
 
             isOpenModal: false,
@@ -38,15 +37,17 @@ createApp({
         openModal(index){
 
             this.isOpenModal = true;
+            this.modalDisk = this.dischi[index];
+            /*
+                this.objectIndex = index;
 
-            this.objectIndex = index;
+                for(let i = 0; i < this.dischi.length; i++){
 
-            for(let i = 0; i < this.dischi.length; i++){
-
-                if(i === this.objectIndex){
-                    this.modalDisk = this.dischi[i]
+                    if(i === this.objectIndex){
+                        this.modalDisk = this.dischi[i]
+                    }
                 }
-            }
+            */
         },
 
 

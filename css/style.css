@@ -1,0 +1,62 @@
+
+/** Utilities */
+
+.my-d-none{
+    display: none;
+}
+
+.my-d-block{
+    display: block;
+}
+
+/** Style */
+.text-bg-special{
+    background-color: #112030;
+    color: white;
+}
+
+/** Header */
+
+header{
+    background-color: #06131F;        
+}
+
+header .title{
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+/** Main */
+main{
+    background-color: #1D2D3C;
+}
+
+img{
+    max-width: 300px;
+}
+
+.my-modal{        
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    width: 95%;
+    height: 95%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.close-modal{
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    cursor: pointer;
+}
