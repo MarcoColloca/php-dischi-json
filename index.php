@@ -24,14 +24,14 @@
         <main>
             <section class="disk-cards py-5">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-3">
-                            <div class="card text-bg-dark">
-                                <img src="..." class="card-img-top" alt="...">
+                    <div class="row g-5">
+                        <div class="col-4" v-for="disco in dischi">
+                            <div class="card text-bg-special p-5">
+                                <img :src="disco.poster" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title text-center">Titolo!</h5>
-                                    <p class="card-text text-center">Autore.</p>
-                                    <h5 class="card-title text-center">Anno?</h5>
+                                    <h5 class="card-title text-center">{{disco.title}}</h5>
+                                    <p class="card-text text-center">{{disco.author}}</p>
+                                    <h5 class="card-title text-center">{{disco.year}}</h5>
                                 </div>
                             </div>
                         </div>
@@ -49,14 +49,17 @@
 
 
 <style>
-    body{
-        background-color: rgb(53, 53, 53);
+
+    /** Style */
+    .text-bg-special{
+        background-color: #112030;
+        color: white;
     }
 
     /** Header */
 
     header{
-        background-color: coral;        
+        background-color: #06131F;        
     }
 
     header .title{
@@ -66,9 +69,8 @@
     }
 
     /** Main */
-
-    .disk-cards{
-
+    main{
+        background-color: #1D2D3C;
     }
 </style>
 </html>

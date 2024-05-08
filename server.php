@@ -43,3 +43,15 @@ $dischi = [
         "genre" => "Rock"
     ]
 ];
+
+// in che modo verranno inviati i dati al server?
+header('Content-type: application/json');
+
+// quale sarà la risposta ricevuta?
+$response = [
+  'results' => $dischi,
+  'success' => true
+];
+
+//in che formato verrà generato l'output? 
+echo json_encode($response);
