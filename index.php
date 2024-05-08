@@ -12,13 +12,47 @@
 
 <body>
     <div id="app">
-        {{ message }}
+        
+        <header>
+            <div class="title">
+                <h1>
+                    {{ message }}
+                </h1>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <div class="row">
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+        </main>
+        
+       
     </div>
-
-
-
 
 
     <script src="./js/app.js"></script>
 </body>
+
+
+<style>
+    body{
+        background-color: rgb(53, 53, 53);
+    }
+
+
+    header{
+        background-color: coral;        
+    }
+
+    header .title{
+        color: white;
+        padding: 30px 0;
+        text-align: center;
+    }
+</style>
 </html>
